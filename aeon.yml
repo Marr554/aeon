@@ -115,7 +115,7 @@ skills:
   skill-scan: { enabled: false, schedule: "0 16 * * 1" }
   code-health: { enabled: false, schedule: "0 16 * * *" }
   changelog: { enabled: false, schedule: "0 16 * * *" }
-  external-feature: { enabled: false, schedule: "30 16 * * *", var: "" } # proactively enhance watched repos — set var to owner/repo or owner/repo#N
+  external-feature: { enabled: true, schedule: "30 16 * * *", var: "" } # proactively enhance watched repos — set var to owner/repo or owner/repo#N
   vuln-scanner: { enabled: false, schedule: "0 16 * * 6", var: "" } # Saturday — audit repos for security vulns, PR fixes
   deploy-prototype: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — build app and deploy to Vercel
   base-mcp: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — Base Account access via the Base MCP server (mcp.base.org)
@@ -152,10 +152,10 @@ skills:
   # --- Evening / meta (6 PM UTC) ---
   goal-tracker: { enabled: false, schedule: "0 18 * * *" }
   strategy-builder: { enabled: true, schedule: "workflow_dispatch", var: "" } # on-demand — draft STRATEGY.md (north-star / priorities / audience / constraints) from a brief + repo README + memory. var: bare goal text, or structured brief "repo=owner/repo | links=url1,url2 | goal=free text". Powers the dashboard Strategy → Build my strategy button. No API key needed.
-  skill-health: { enabled: false, schedule: "0 18 * * *" }
+  skill-health: { enabled: true, schedule: "0 18 * * *" }
   skill-analytics: { enabled: false, schedule: "30 18 * * 3" } # Wednesday — fleet-level skill-run analytics: ranked run counts, exit-taxonomy distribution, anomaly flags (significance-gated)
 
-  self-improve: { enabled: false, schedule: "0 18 1/2 * *" } # every other day — improve agent skills/prompts/config
+  self-improve: { enabled: true, schedule: "0 18 1/2 * *" } # every other day — improve agent skills/prompts/config
   reflect: { enabled: false, schedule: "0 18 * * *" }
 
   action-converter: { enabled: false, schedule: "0 18 * * *" }
@@ -472,3 +472,16 @@ channels:
 # Polls for messages every 5 minutes on Telegram/Discord/Slack.
 telegram:
   enabled: true
+
+# Korena-specific example chain (disabled by default)
+# Trigger manually via workflow_dispatch or enable schedule.
+# research → brief (with soul voice) → content draft
+# korena-research-brief:
+#   schedule: "workflow_dispatch"
+#   on_error: continue
+#   steps:
+#     - skill: deep-research, var: "short-form video campaign intelligence tools for scale-ups"
+#     - skill: research-brief, consume: [deep-research]
+#     - skill: thread-writer, consume: [research-brief], var: "key signals for Korena positioning"
+
+# Enable by uncommenting and pushing.
