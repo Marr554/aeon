@@ -485,3 +485,13 @@ telegram:
 #     - skill: thread-writer, consume: [research-brief], var: "key signals for Korena positioning"
 
 # Enable by uncommenting and pushing.
+
+# Korena research-to-content chain (example, disabled by default)
+# korena-signal-to-brief:
+#   schedule: "workflow_dispatch"
+#   on_error: continue
+#   steps:
+#     - parallel: [deep-research]
+#     - skill: research-brief, consume: [deep-research]
+#     - skill: thread-writer, consume: [research-brief], var: "key signals + brand fit for Korena"
+
