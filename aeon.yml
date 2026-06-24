@@ -6,7 +6,7 @@
 
 skills:
   # --- Morning aggregation (7 AM UTC) ---
-  priority-brief: { enabled: false, schedule: "0 7 * * *" }
+  priority-brief: { enabled: true, schedule: "0 7 * * *" }
   routine: { enabled: false, schedule: "0 7 * * *" }
   rss-digest: { enabled: false, schedule: "0 7 * * *" }
   hn-digest: { enabled: false, schedule: "0 7 * * *" } # top HN stories filtered by MEMORY.md interests
@@ -24,9 +24,9 @@ skills:
       schedule: "workflow_dispatch",
       var: ""
     } # workflow_dispatch only — structured triage receipt for inbound PRs that introduce/modify SKILL.md files. Runs skill-scan against each SKILL.md, enumerates required secrets, checks cron slot conflicts vs existing aeon.yml, surfaces quality signals (description, step count, notify call, tags). Posts ONE structured comment per (PR, head_sha). var: PR_NUMBER on aaronjmars/aeon. Gated notify (BLOCK or COMMENT_FAILED only).
-  pr-review: { enabled: false, schedule: "0 9 * * *" }
+  pr-review: { enabled: true, schedule: "0 9 * * *" }
   auto-merge: { enabled: false, schedule: "0 14 * * *" } # merge green PRs daily at 2 PM UTC; max 3 per run
-  github-monitor: { enabled: false, schedule: "0 9 * * *" }
+  github-monitor: { enabled: true, schedule: "0 9 * * *" }
   github-trending: { enabled: false, schedule: "0 9 * * *" }
   github-releases: { enabled: false, schedule: "30 9 * * *" } # track new releases from watched repos
   huggingface-trending:
@@ -80,8 +80,8 @@ skills:
   article: { enabled: false, schedule: "0 14 * * *" }
   technical-explainer: { enabled: false, schedule: "30 14 * * *" } # visual technical explanation with AI-generated hero image
   digest: { enabled: false, schedule: "0 14 * * *" }
-  research-brief: { enabled: false, schedule: "0 14 * * *" }
-  deep-research: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand only — set var to research topic
+  research-brief: { enabled: true, schedule: "0 14 * * *" }
+  deep-research: { enabled: true, schedule: "workflow_dispatch", var: "" } # on-demand only — set var to research topic
   last30: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — cross-platform 30-day social research
   paper-pick: { enabled: false, schedule: "0 14 * * *" }
   search-skill: { enabled: false, schedule: "0 14 * * *" }
@@ -151,7 +151,7 @@ skills:
 
   # --- Evening / meta (6 PM UTC) ---
   goal-tracker: { enabled: false, schedule: "0 18 * * *" }
-  strategy-builder: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — draft STRATEGY.md (north-star / priorities / audience / constraints) from a brief + repo README + memory. var: bare goal text, or structured brief "repo=owner/repo | links=url1,url2 | goal=free text". Powers the dashboard Strategy → Build my strategy button. No API key needed.
+  strategy-builder: { enabled: true, schedule: "workflow_dispatch", var: "" } # on-demand — draft STRATEGY.md (north-star / priorities / audience / constraints) from a brief + repo README + memory. var: bare goal text, or structured brief "repo=owner/repo | links=url1,url2 | goal=free text". Powers the dashboard Strategy → Build my strategy button. No API key needed.
   skill-health: { enabled: false, schedule: "0 18 * * *" }
   skill-analytics: { enabled: false, schedule: "30 18 * * 3" } # Wednesday — fleet-level skill-run analytics: ranked run counts, exit-taxonomy distribution, anomaly flags (significance-gated)
 
@@ -312,7 +312,7 @@ skills:
       schedule: "0 8 * * *",
       var: ""
     } # daily 08:00 UTC — schedule paid ads across Meta/TikTok/Snapchat/Pinterest/LinkedIn from skills/schedule-ads/config.yaml; launches PAUSED by default
-  create-campaign: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — provision Meta campaigns/ad sets on AdManage.ai (PAUSED) and write IDs back so schedule-ads can launch into them
+  create-campaign: { enabled: true, schedule: "workflow_dispatch", var: "" } # on-demand — provision Meta campaigns/ad sets on AdManage.ai (PAUSED) and write IDs back so schedule-ads can launch into them
 
   # --- Utilities ---
   auto-workflow: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — var: URL to analyze
@@ -335,7 +335,7 @@ skills:
   # Research & content
   agent-displacement: { enabled: false, schedule: "0 11 * * 0" } # Sunday — AI-agent headcount-displacement signals (named roles + real deployments)
   launch-radar: { enabled: false, schedule: "30 10 * * 1" } # Monday — scan PH/HN/GitHub Trending for launches matching the startup-idea backlog
-  topic-momentum: { enabled: false, schedule: "30 6 * * 1" } # Monday — content-gap scan: top 3 uncovered angles vs recent article history
+  topic-momentum: { enabled: true, schedule: "30 6 * * 1" } # Monday — content-gap scan: top 3 uncovered angles vs recent article history
   narrative-convergence:
     {
       enabled: false,
@@ -390,8 +390,8 @@ skills:
       schedule: "0 10 * * 0",
       var: ""
     } # Sunday 10:00 UTC — weekly engagement analysis of the operator's X account (topics, formats, breakouts); feeds article-queue/topic-momentum. var: X handle (no @); falls back to soul/SOUL.md. XAI_API_KEY optional (WebSearch fallback).
-  thread-writer: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — write a 5–10 tweet thread in the operator's voice on a topic/URL; picks the sharpest recent signal from memory if var empty
-  soul-builder: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — build a SOUL from any mix of sources (X handle, full name, links), drafting soul/SOUL.md + STYLE.md + examples so every content skill speaks in that voice. var: bare X handle, or structured brief "x=handle | name=Full Name | links=url1,url2". Powers the dashboard Soul → Build my soul button. XAI_API_KEY optional (name/links use built-in WebSearch/WebFetch).
+  thread-writer: { enabled: true, schedule: "workflow_dispatch", var: "" } # on-demand — write a 5–10 tweet thread in the operator's voice on a topic/URL; picks the sharpest recent signal from memory if var empty
+  soul-builder: { enabled: true, schedule: "workflow_dispatch", var: "" } # on-demand — build a SOUL from any mix of sources (X handle, full name, links), drafting soul/SOUL.md + STYLE.md + examples so every content skill speaks in that voice. var: bare X handle, or structured brief "x=handle | name=Full Name | links=url1,url2". Powers the dashboard Soul → Build my soul button. XAI_API_KEY optional (name/links use built-in WebSearch/WebFetch).
   # Social
   mention-radar:
     {
