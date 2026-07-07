@@ -45,13 +45,13 @@
   },
   "priority-brief": {
     "last_status": "failed",
-    "last_failed": "2026-07-07T11:32:58Z",
-    "total_runs": 168,
+    "last_failed": "2026-07-07T13:37:46Z",
+    "total_runs": 169,
     "total_successes": 0,
-    "total_failures": 168,
-    "consecutive_failures": 168,
+    "total_failures": 169,
+    "consecutive_failures": 169,
     "success_rate": 0,
-    "last_error": "f38e5db\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
+    "last_error": "3fa282c\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
   },
   "pr-review": {
     "last_status": "failed",
