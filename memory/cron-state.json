@@ -2,13 +2,13 @@
   "research-brief": {
     "last_dispatch": "2026-06-24T23:46:01Z",
     "last_status": "failed",
-    "last_failed": "2026-07-08T04:25:45Z",
-    "total_runs": 190,
+    "last_failed": "2026-07-08T06:44:00Z",
+    "total_runs": 191,
     "total_successes": 0,
-    "total_failures": 190,
-    "consecutive_failures": 190,
+    "total_failures": 191,
+    "consecutive_failures": 191,
     "success_rate": 0,
-    "last_error": "3f88745\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
+    "last_error": "d41447c\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
   },
   "heartbeat": {
     "last_dispatch": "2026-06-24T23:46:01Z",
