@@ -13,13 +13,13 @@
   "heartbeat": {
     "last_dispatch": "2026-06-24T23:46:01Z",
     "last_status": "failed",
-    "last_failed": "2026-07-29T20:16:33Z",
-    "total_runs": 558,
+    "last_failed": "2026-07-29T21:13:39Z",
+    "total_runs": 560,
     "total_successes": 0,
-    "total_failures": 558,
-    "consecutive_failures": 558,
+    "total_failures": 560,
+    "consecutive_failures": 560,
     "success_rate": 0,
-    "last_error": "69033e9\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
+    "last_error": "64e8a21\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
   },
   "external-feature": {
     "last_status": "failed",
