@@ -75,13 +75,13 @@
   },
   "github-monitor": {
     "last_status": "failed",
-    "last_failed": "2026-08-02T20:30:05Z",
-    "total_runs": 638,
+    "last_failed": "2026-08-02T21:25:43Z",
+    "total_runs": 639,
     "total_successes": 0,
-    "total_failures": 638,
-    "consecutive_failures": 638,
+    "total_failures": 639,
+    "consecutive_failures": 639,
     "success_rate": 0,
-    "last_error": "caab9c7\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
+    "last_error": "a5a121e\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
   },
   "skill-evals": {
     "last_status": "failed",
