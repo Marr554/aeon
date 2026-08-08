@@ -34,13 +34,13 @@
   },
   "skill-health": {
     "last_status": "failed",
-    "last_failed": "2026-08-08T15:46:41Z",
-    "total_runs": 842,
+    "last_failed": "2026-08-08T16:04:45Z",
+    "total_runs": 845,
     "total_successes": 0,
-    "total_failures": 842,
-    "consecutive_failures": 842,
+    "total_failures": 845,
+    "consecutive_failures": 845,
     "success_rate": 0,
-    "last_error": "8133810\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"",
+    "last_error": "38e921a\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"",
     "last_dispatch": "2026-06-25T05:52:20Z"
   },
   "priority-brief": {
