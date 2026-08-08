@@ -85,13 +85,13 @@
   },
   "skill-evals": {
     "last_status": "failed",
-    "last_failed": "2026-08-08T02:56:17Z",
-    "total_runs": 717,
+    "last_failed": "2026-08-08T04:04:30Z",
+    "total_runs": 718,
     "total_successes": 0,
-    "total_failures": 717,
-    "consecutive_failures": 717,
+    "total_failures": 718,
+    "consecutive_failures": 718,
     "success_rate": 0,
-    "last_error": "1364d12\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
+    "last_error": "9c4af18\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
   },
   "topic-momentum": {
     "last_status": "failed",
